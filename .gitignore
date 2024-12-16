@@ -1,24 +1,44 @@
-# Logs
-logs
+# Ignorer les fichiers et dossiers générés par l'IDE
+.vscode/
+.idea/
+*.iml
+
+# Ignorer les fichiers de construction et binaires
+target/
+bin/
+out/
+
+# Ignorer les fichiers de sauvegarde, temporaires et autres
+*.bak
+*.swp
+*.tmp
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Ignorer les fichiers système
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Ignorer les fichiers spécifiques aux environnements Unix/Mac
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+.trash/
+
+# Ignorer les fichiers d'environnement (exemple : Python, Node, spécifiques au projet)
+.env
+node_modules/
+dist/
+
+# Ignorer les résultats de tests ou rapports de compilateurs
+*.coverage
+*.test-results
+
+# Ignorer les fichiers de sécurité ou de configuration locale
+*.key
+*.pem
+*.crt
+
+# Informations spécifiques ajoutées par vos besoins
+./target/
+./.vscode
+.settings
