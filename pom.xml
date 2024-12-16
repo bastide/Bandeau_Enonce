@@ -7,9 +7,8 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <!-- configuration du plugin exec-maven-plugin  -->            
+        <java.version>21</java.version>
+        <!-- configuration du plugin exec-maven-plugin  -->
         <!-- On pourra exécuter le programme avec : 'mvn package exec:java' -->            
         <exec.mainClass>exemple.ExempleDUtilisation</exec.mainClass>       
     </properties>
@@ -19,11 +18,20 @@
         <dependency>
             <groupId>io.github.bastide</groupId>
             <artifactId>bandeau</artifactId>
-            <version>1.1</version>
+            <version>1.5</version>
         </dependency>
     </dependencies>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
