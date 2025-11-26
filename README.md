@@ -2,13 +2,7 @@
 
 ## Description
 
-Ce projet a pour objectif de modéliser en UML et d'implémenter en Java un programme qui diffuse des animations de texte sur un bandeau publicitaire, comme illustré dans la vidéo ci-dessous.
-[![Vidéo de démonstration](./doc/videoframe_0.png)](./doc/exempleDeScenario.mp4)
-
-<video width="640" height="360" controls>
-  <source src="./doc/exempleDeScenario.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la balise vidéo.
-</video>
+Ce projet a pour objectif de modéliser en UML et d'implémenter en Java un programme qui diffuse des animations de texte sur un bandeau publicitaire.
 
 ## La classe Bandeau
 
